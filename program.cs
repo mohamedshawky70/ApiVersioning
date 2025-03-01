@@ -1,3 +1,5 @@
+//Install Asp.Versioning.Http and Asp.Versioning.Mvc.ApiExplorer package
+
 //Add api versioning
 services.AddApiVersioning(options =>
 {
