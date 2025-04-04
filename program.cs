@@ -14,10 +14,11 @@ services.AddApiVersioning(options =>
   });
 
 //On Controller
-	[ApiVersion(1,Deprecated = true)]
-	[ApiVersion(2)]
+[ApiVersion(1, Deprecated = true)]
+[ApiVersion(2)]
+[Route("api/v{v:apiVersion}/[controller]")]
 
 //On differenet action
-	[ApiVersion(1)]
+[ApiVersion(1)]
  //--
- 	[ApiVersion(2)]
+[ApiVersion(2)]
